@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header {
+    padding: 30px 300px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+        margin-top: 5px;
+
+        a {
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-left: 40px;
+            font-family: 'Montserrat', sans-serif;
+
+            &:hover {
+                color: #ffc800;
+            }
+        }
+    }
+}
+
+.first {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 21rem 0;
+    z-index: 1;
+    color: #fff;
+    padding: 16rem 0;
+
+    h3 {
+        font-style: italic;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        margin-bottom: 70px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80px;
+    }
+
+    a {
+        padding: 1.5rem 2.8rem;
+        background-color: #ffc800;
+        color: #fff;
+        font-size: 1.125rem;
+        font-weight: 700;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            background-color: #92791d;
+        }
+    }
+}
+
+.services {
+    text-align: center;
+    padding: 10rem 0;
+    overflow: hidden;
+
+    .services-text {
+        h2 {
+            color: #212529;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+    }
+
+    .services-boxs {
+        width: 80%;
+        margin: auto;
+
+        .services-box {
+            float: left;
+            width: calc(100%/3);
+
+            i {
+                font-size: 3rem;
+                padding: 45px 40px;
+                background-color: #ffc800;
+                border-radius: 50%;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #6c757d;
+            }
+        }
+
+    }
+}
+
+.portfolio {
+    padding: 6rem 0;
+    background-color: rgb(202, 207, 212);
+
+    .portfolio-text {
+        text-align: center;
+
+        h2 {
+            color: #212529;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .portfolio-boxs {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+
+        .portfolio-box {
+            width: calc(100%/3);
+            float: left;
+            position: relative;
+
+            a {
+                &:hover {
+                    .overlay {
+                        opacity: 0.9;
+                    }
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #ffc800;
+                opacity: 0;
+
+            }
+
+            .img-txt {
+                text-align: center;
+                padding: 15px 0;
+                box-sizing: border-box;
+                background-color: #fff;
+
+                h2 {
+                    color: #212529;
+                    font-size: 1.5rem;
+                    font-family: 'Montserrat', sans-serif;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: #6c757d;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.team {
+    padding: 6rem 0;
+    background-color: #dae0e6;
+    overflow: hidden;
+
+    .team-txt {
+        text-align: center;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #212529;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            font-style: italic;
+            color: #6c757d;
+        }
+
+    }
+
+    .team-boxs {
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+        overflow: hidden;
+
+        .team-box {
+            width: calc(100%/3);
+            float: left;
+            text-align: center;
+
+            img {
+                width: 14rem;
+                height: 14rem;
+                border: 0.5rem solid rgb(0 0 0 / 10%);
+                border-radius: 50%;
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                font-size: 24px;
+                color: #212529;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: #6c757d;
+                margin-bottom: 30px;
+            }
+
+            a {
+                height: 2.5rem;
+                width: 2.5rem;
+                padding: 10px 12px;
+                background-color: #212529;
+                color: #fff;
+                border-radius: 50%;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+        }
+
+    }
+
+    .team-finish {
+        text-align: center;
+
+        p {
+            color: #6c757d;
+
+        }
+    }
+}
+
+.images {
+    padding: 3rem 0;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    .image {
+        width: calc(100%/4);
+        text-align: center;
+        float: left;
+    }
+}
+
+.contact {
+    padding: 6rem 0;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #212529;
+    overflow: hidden;
+
+    .contact-txt {
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-size: 40px;
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 20px;
+        }
+    }
+
+    .contact-form {
+        padding: 3rem 0;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+
+        .contact-left {
+            float: left;
+            width: 50%;
+
+            input {
+                font-size: 1.5rem;
+                padding: 2rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+                width: 95%;
+            }
+        }
+
+        .contact-right {
+            float: right;
+            width: 50%;
+
+            textarea {
+                font-size: 1.5rem;
+                padding: 2rem;
+                font-weight: bold;
+                width: 95%;
+            }
+
+        }
+    }
+
+    .contact-button {
+        text-align: center;
+
+        button {
+            background-color: #ffc800;
+            padding: 28px 30px;
+            border-color: #ffc800;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            opacity: 0.6;
+            font-size: 20px;
+        }
+    }
+}
+
+#footer {
+    padding: 2rem 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+
+    .foot-one {
+        width: calc(100%/3);
+        float: left;
+        p{
+            color: #212529;
+            font-size: 1.2rem;
+        }
+    }
+
+    .foot-two {
+        width: calc(100%/3);
+        float: left;
+        a{
+            background-color: #212529;
+            border-radius: 100%;
+            color: white;
+            padding: 0.8rem 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .foot-three {
+        width: calc(100%/3);
+        float: left;
+        a{
+            margin-right: 1rem;
+            color: #212529;
+            font-size: 1.2rem;
+        }
+    }
+
+}
